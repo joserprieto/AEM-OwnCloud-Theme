@@ -6,29 +6,29 @@ Very simple theme for OwnCloud.
 Directory structure.
 --------------------
 
-themes
-└── arteetmarte
-    ├── assets
-    │   └── icons
-    ├── core                    <── Overwrite default CSS, images, javascripts, and templates
-    │   ├── css
-    │   │   └── styles.css      <── Principal CSS file for overwrite CSS default styles
-    │   ├── img                 <── Images of the theme; overwrite the default images
-    │   │   ├── actions
-    │   │   ├── filetypes
-    │   │   ├── places
-    │   │   └── rating
-    │   └── templates           <── Templates of the theme; overwrite the defaults.
-    │       ├── filetemplates
-    │       └── lostpassword
-    └── settings                <── Overwrite settings CSS, images, javascripts, and templates; not needed in fact.
-        └── templates
-            └── users
+    themes
+    └── arteetmarte
+        ├── assets
+        │   └── icons
+        ├── core                    <── Overwrite default CSS, images, javascripts, and templates
+        │   ├── css
+        │   │   └── styles.css      <── Principal CSS file for overwrite CSS default styles
+        │   ├── img                 <── Images of the theme; overwrite the default images
+        │   │   ├── actions
+        │   │   ├── filetypes
+        │   │   ├── places
+        │   │   └── rating
+        │   └── templates           <── Templates of the theme; overwrite the defaults.
+        │       ├── filetemplates
+        │       └── lostpassword
+        └── settings                <── Overwrite settings CSS, images, javascripts, and templates; not needed in fact.
+            └── templates
+                └── users
 
 Reference.
 ----------
 
-https://doc.owncloud.org/server/9.0/developer_manual/core/theming.html
+    https://doc.owncloud.org/server/9.0/developer_manual/core/theming.html
 
 Versions and apps.
 ------------------
