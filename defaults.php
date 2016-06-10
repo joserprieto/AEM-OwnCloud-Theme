@@ -1,8 +1,9 @@
 <?php
 /**
+ * @author joserprieto <jose at joserprieto dot es>
  * @author Björn Schießle <schiessle@owncloud.com>
  * @author Jan-Christoph Borchardt, http://jancborchardt.net
- * @copyright Copyright (c) 2015, ownCloud, Inc.
+ * @copyright Copyright (c) 2016, joserprieto
  * @license AGPL-3.0
  *
  * This code is free software: you can redistribute it and/or modify
@@ -25,7 +26,7 @@ class OC_Theme {
 	 * @return string URL
 	 */
 	public function getBaseUrl() {
-		return 'https://owncloud.org';
+		return 'http://arteetmarte.org/';
 	}
 
 	/**
@@ -73,7 +74,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getTitle() {
-		return 'Custom Cloud';
+		return 'Doc Arte et Marte';
 	}
 
 	/**
@@ -81,7 +82,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getName() {
-		return 'Custom Cloud';
+		return 'Doc Arte et Marte';
 	}
 
 	/**
@@ -89,7 +90,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getHTMLName() {
-		return 'Custom Cloud';
+		return 'Doc Arte et Marte';
 	}
 
 	/**
@@ -97,7 +98,7 @@ class OC_Theme {
 	 * @return string entity name
 	 */
 	public function getEntity() {
-		return 'Custom Cloud Co.';
+		return 'Legio IIII Macedónica';
 	}
 
 	/**
@@ -105,15 +106,14 @@ class OC_Theme {
 	 * @return string slogan
 	 */
 	public function getSlogan() {
-		return 'Your custom cloud, personalized for you!';
+		return 'Documentación y fotografías de la I Edición del Arte et Marte';
 	}
-
 	/**
 	 * Returns logo claim
 	 * @return string logo claim
 	 */
 	public function getLogoClaim() {
-		return '';
+		return 'Arte et Marte';
 	}
 
 	/**
@@ -121,7 +121,7 @@ class OC_Theme {
 	 * @return string short footer
 	 */
 	public function getShortFooter() {
-		$footer = '© 2015 <a href="'.$this->getBaseUrl().'" target="_blank\">'.$this->getEntity().'</a>'.
+		$footer = '© 2016 <a href="'.$this->getBaseUrl().'" target="_blank\">'.$this->getEntity().'</a>'.
 			'<br/>' . $this->getSlogan();
 
 		return $footer;
@@ -132,7 +132,7 @@ class OC_Theme {
 	 * @return string long footer
 	 */
 	public function getLongFooter() {
-		$footer = '© 2015 <a href="'.$this->getBaseUrl().'" target="_blank\">'.$this->getEntity().'</a>'.
+		$footer = '© 2016 <a href="'.$this->getBaseUrl().'" target="_blank\">'.$this->getEntity().'</a>'.
 			'<br/>' . $this->getSlogan();
 
 		return $footer;
@@ -148,7 +148,7 @@ class OC_Theme {
 	 * @return string
 	 */
 	public function getMailHeaderColor() {
-		return '#745bca';
+		return '#795548';
 	}
 
 }
