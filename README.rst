@@ -6,6 +6,8 @@ Very simple theme for OwnCloud.
 Directory structure.
 --------------------
 
+::
+
     themes
     └── arteetmarte
         ├── assets
