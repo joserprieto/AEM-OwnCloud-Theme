@@ -1,5 +1,27 @@
+<?php
+/**************************************************************************
+ * Copyleft joserprieto - Some Rights Reserved
+ *
+ * joserprieto
+ *
+ *
+ * @file        layout.base.php
+ * @author      joserprieto
+ * @date        10/06/16 22:27
+ * @project     OwnCloud Theme Arte et Marte
+ * @projectCode AEM-OCL
+ * @site        http://arteetmarte.org
+ * @repo        git@bitbucket.org:joserprieto-team/aem-ocl.git
+ *
+ * @type        php
+ */
+
+/**
+ * @var \OC_Defaults	$theme
+ */
+?>
 <!DOCTYPE html>
-<!-- TEMPLATE. ./themes/arteetmarte/core/templates/layout.base.php -->
+<!-- TEMPLATE: ./themes/arteetmarte/core/templates/layout.base.php -->
 <!--[if lte IE 8]><html class="ng-csp ie ie8 lte9 lte8" data-placeholder-focus="false" lang="<?php p($_['language']); ?>" ><![endif]-->
 <!--[if IE 9]><html class="ng-csp ie ie9 lte9" data-placeholder-focus="false" lang="<?php p($_['language']); ?>" ><![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--><html class="ng-csp" data-placeholder-focus="false" lang="<?php p($_['language']); ?>" ><!--<![endif]-->

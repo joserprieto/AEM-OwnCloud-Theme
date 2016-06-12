@@ -138,6 +138,20 @@ class OC_Theme {
 		return $footer;
 	}
 
+	/**
+	 * Returns long version of the footer for the User Default Layout
+	 * @return string long footer
+	 */
+	public function getFooterForUserLayout() {
+		return
+			'© 2016 <a href="'.$this->getBaseUrl().'" target="_blank\">'
+			. $this->getEntity()
+			. '</a>'
+			. $this->getName()
+			. ' - '
+			. $this->getSlogan();
+	}
+
 	public function buildDocLinkToKey($key) {
 		return $this->getDocBaseUrl() . '/server/8.0/go.php?to=' . $key;
 	}

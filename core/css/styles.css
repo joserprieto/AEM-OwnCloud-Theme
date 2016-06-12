@@ -1,6 +1,6 @@
 /**
  * @author joserprieto <jose at joserprieto dot es>
- * @copyright Copyright (c) 2015, ownCloud, Inc.
+ * @copyright joserprieto (c) 2016, joserprieto
  * @license AGPL-3.0
  *
  * This code is free software: you can redistribute it and/or modify
@@ -55,11 +55,11 @@ body {
 #body-login {
 	text-align: center;
 	background: rgba(121,85,72,1); /* Old browsers */
-	background: -moz-linear-gradient(top, rgba(121,85,72,.5) 0%, rgba(121,85,72,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(121,85,72,.5)), color-stop(100%,rgba(121,85,72,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, rgba(121,85,72,.5) 0%,rgba(121,85,72,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: linear-gradient(top, rgba(121,85,72,.5) 0%,rgba(121,85,72,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35537a', endColorstr='rgba(121,85,72,1)',GradientType=0 ); /* IE6-9 */
+	background: -moz-linear-gradient(top, rgba(244,67,54,1) 0%, rgba(211,47,47,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(244,67,54,1)), color-stop(100%,rgba(211,47,47,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(244,67,54,1) 0%,rgba(211,47,47,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: linear-gradient(top, rgba(244,67,54,1) 0%,rgba(211,47,47,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(244,67,54,1)', endColorstr='rgba(211,47,47,1)',GradientType=0 ); /* IE6-9 */
 }
 
 .float-spinner {
@@ -197,6 +197,7 @@ body {
 	width: 100%;
 	overflow-x: hidden; /* prevent horizontal scrollbar */
 	padding-top: 80px;
+	padding-bottom:1.7em;
 	box-sizing:border-box;
 }
 /* allow horizontal scrollbar for personal and admin settings */
@@ -230,7 +231,31 @@ body {
 	opacity: .4;
 }
 
+/* FOOTER - ON CONTENT -------------------------------------------------------------- */
 
+#footer-wrapper {
+	height:2em !important;
+	width:100% !important;
+	position:fixed !important;
+	line-height: 1.2em;
+	font-size:.8em;
+	color:#fff;
+	text-align:center;
+	vertical-align: bottom;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(211,47,47,1);
+	box-sizing: border-box;
+	box-shadow: 0 -3px 3px -1px rgba(0,0,0,.3);
+	-webkit-box-shadow: 0 -3px 3px -1px rgba(0,0,0,.3);
+	-moz-box-shadow: 0 -3px 3px -1px rgba(0,0,0,.3);
+}
+
+/* Adjust the bottom of the nav-trasbin icon */
+.nav-trashbin {
+	position: fixed !important;
+	bottom: 4em !important;
+}
 /* LOG IN & INSTALLATION ------------------------------------------------------------ */
 
 /* Some whitespace to the top */
@@ -1038,8 +1063,11 @@ fieldset.warning legend + p, fieldset.update legend + p {
 	z-index: 2000;
 	height: 80px;
 	line-height: 2.5em;
-	background-color: rgba(121,85,72,1);
+	background-color: rgba(211,47,47,1);
 	box-sizing: border-box;
+	box-shadow: 0 4px 4px -2px rgba(0,0,0,.4);
+	-webkit-box-shadow: 0 4px 4px -2px rgba(0,0,0,.4);
+	-moz-box-shadow: 0 4px 4px -2px rgba(0,0,0,.4);
 }
 
 
@@ -1114,7 +1142,7 @@ fieldset.warning legend + p, fieldset.update legend + p {
 .header-appname {
 	display: inline-block;
 	position: relative;
-	color: #fff;
+	color: rgba(255,255,255,.75);
 	font-size: 16px;
 	font-weight: 300;
 	margin: 0;
@@ -1131,6 +1159,7 @@ fieldset.warning legend + p, fieldset.update legend + p {
 	margin-top: -21px;
 	padding: 0;
 	vertical-align: middle;
+	opacity: .75;
 }
 /* do not show menu toggle on public share links as there is no menu */
 #body-public #header .icon-caret {
@@ -1149,9 +1178,10 @@ fieldset.warning legend + p, fieldset.update legend + p {
 	max-height: 85%;
 	margin-top: 0;
 	padding-bottom: 10px;
-	background-color: rgba(0, 0, 0, .97);
+	/*background-color: rgba(0, 0, 0, .97);*/
+	background-color: rgba(121,85,72,1);
 	box-shadow: 0 1px 10px rgba(50, 50, 50, .7);
-	border-radius: 3px;
+	border-radius: 4px;
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
 	display: none;
@@ -1169,7 +1199,7 @@ fieldset.warning legend + p, fieldset.update legend + p {
 	position: absolute;
 	pointer-events: none;
 	border-color: rgba(0, 0, 0, 0);
-	border-bottom-color: rgba(0, 0, 0, .97);
+	border-bottom-color: rgba(121,85,72,1);/* adjust color of arrows */
 	border-width: 10px;
 	margin-left: -10px;
 }
@@ -1287,10 +1317,9 @@ fieldset.warning legend + p, fieldset.update legend + p {
 	opacity: 1;
 	cursor: pointer;
 }
-
 #settings {
 	float: right;
-	color: #bbb;
+	color: rgba(255, 255, 255, .75);
 	cursor: pointer;
 	margin-top:27px;
 }
@@ -1324,12 +1353,14 @@ fieldset.warning legend + p, fieldset.update legend + p {
 	top: 80px;
 	z-index: 2000;
 	display: none;
-	background-color: rgba(0, 0, 0, .97);
+	background-color: rgba(121,85,72,1);
+	/*background-color: rgba(0, 0, 0, .97);*/
 	box-shadow: 0 1px 10px rgba(50, 50, 50, .7);
-	border-radius: 3px;
+	border-radius: 4px;
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
 	box-sizing: border-box;
+	padding-bottom: .8em;
 }
 #expanddiv a {
 	display: block;
@@ -1813,10 +1844,10 @@ fieldset.warning legend + p, fieldset.update legend + p {
 */
 #app-sidebar {
 	position: fixed;
-	top: 80px;
+	top: 80px;		/* adjust the new height of header */
 	right: 0;
 	left: auto;
-	bottom: 0;
+	bottom: 2em;	/* adjust the height of the new footer */
 	width: 27%;
 	min-width: 300px;
 	display: block;
@@ -1844,7 +1875,7 @@ fieldset.warning legend + p, fieldset.update legend + p {
 #app-settings {
 	position: fixed;
 	width: 250px; /* change to 100% when layout positions are absolute */
-	bottom: 0;
+	bottom: 2em;	/* adjust the height of the new footer */
 	z-index: 140;
 }
 #app-settings.opened #app-settings-content {
@@ -2146,3 +2177,167 @@ em {
 .arte-et-marte-bg-divider-color {
 	background-color: rgba(182,182,182,1) !important;
 }
+
+
+/***********************************************************************************************************************
+ *
+ * Mobile CSS Styles
+ *
+ * Overwrite the styles on file ./core/css/mobile.css
+ *
+ **********************************************************************************************************************/
+@media only screen and (max-width: 768px) {
+
+	#body-login #header {
+		padding-top: 10px;
+	}
+
+	#body-login .wrapper {
+		display: -webkit-box;
+		-webkit-box-orient: horizontal;
+		-webkit-box-pack: center;
+		-webkit-box-align: center;
+
+		display: -moz-box;
+		-moz-box-orient: horizontal;
+		-moz-box-pack: center;
+		-moz-box-align: center;
+
+		display: box;
+		box-orient: horizontal;
+		box-pack: center;
+		box-align: center;
+	}
+
+	/* on mobile public share, show only the icon of the logo, hide the text */
+	#body-public #header .header-appname-container {
+		display: none;
+	}
+
+	/* do not show update notification on mobile */
+	#update-notification {
+		display: none !important;
+	}
+
+	/* position share dropdown */
+	#dropdown {
+		margin-right: 10% !important;
+		width: 80% !important;
+	}
+
+	/* fix name autocomplete not showing on mobile */
+	.ui-autocomplete {
+		z-index: 1000 !important;
+	}
+
+	/* fix error display on smaller screens */
+	.error-wide {
+		width: 100%;
+		margin-left: 0 !important;
+		box-sizing: border-box;
+	}
+
+
+	/* APP SIDEBAR TOGGLE and SWIPE ----------------------------------------------*/
+
+	#app-navigation,
+	#app-content {
+		position: absolute !important;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	#app-navigation {
+		width: 250px !important;
+	}
+
+	#app-content {
+		width: 100% !important;
+		left: 0 !important;
+		background-color: #fff;
+		overflow-x: hidden !important;
+		z-index: 1000;
+	}
+
+	/* allow horizontal scrollbar in settings
+        otherwise user management is not usable on mobile */
+	#body-settings #app-content {
+		overflow-x: auto !important;
+	}
+
+	#app-navigation-toggle {
+		position: fixed;
+		display: inline-block !important;
+		top: 80px; /* Adjust the new height of the header */
+		left: 0;
+		width: 44px;
+		height: 44px;
+		z-index: 149;
+		background-color: rgba(255, 255, 255, .7);
+		cursor: pointer;
+		opacity: .6;
+	}
+	#app-navigation-toggle:hover,
+	#app-navigation-toggle:focus {
+		opacity: 1;
+	}
+
+
+	/* controls bar for mobile */
+	#controls {
+		min-width: initial !important;
+		left: 0 !important;
+		padding-left: 0;
+	}
+	/* position controls for apps with app-navigation */
+	#app-navigation+#app-content #controls {
+		padding-left: 44px;
+	}
+
+	/* .viewer-mode is when text editor, PDF viewer, etc is open */
+	#body-user .app-files.viewer-mode #controls {
+		padding-left: 0 !important;
+	}
+	.app-files.viewer-mode #app-navigation-toggle {
+		display: none !important;
+	}
+
+	table.multiselect thead {
+		left: 0 !important;
+	}
+
+
+	/* prevent overflow in user management controls bar */
+	#usersearchform {
+		display: none;
+	}
+	#body-settings #controls {
+		min-width: 768px !important;
+	}
+
+
+	/* do not show dates in filepicker */
+	#oc-dialog-filepicker-content .filelist .date {
+		display: none;
+	}
+	#oc-dialog-filepicker-content .filelist .filename {
+		max-width: 80%;
+	}
+
+
+	/* fix controls bar jumping when navigation is slid out */
+	.snapjs-left #app-navigation-toggle,
+	.snapjs-left #controls {
+		top: 0;
+	}
+	.snapjs-left table.multiselect thead {
+		top: 44px;
+	}
+
+
+
+	/* end of media query */
+}
+
