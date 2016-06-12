@@ -32,6 +32,18 @@ Reference.
 
     https://doc.owncloud.org/server/9.0/developer_manual/core/theming.html
 
+
+Preview.
+--------
+
+..  image:: "resources/doc/img/Doc Arte et Marte - Login Page.png"
+    :alt: Preview of Login Page
+
+..  image:: "resources/doc/img/Doc Arte et Marte - Ap Files Home.png"
+    :alt: Preview of Start of the Files App
+
+
+
 Versions and apps.
 ------------------
 
