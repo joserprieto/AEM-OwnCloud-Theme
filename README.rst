@@ -36,10 +36,10 @@ Reference.
 Preview.
 --------
 
-..  image:: "resources/doc/img/Doc Arte et Marte - Login Page.png"
+..  image:: /resources/doc/img/Doc_Arte_et_Marte-Login_page.png
     :alt: Preview of Login Page
 
-..  image:: "resources/doc/img/Doc Arte et Marte - Ap Files Home.png"
+..  image:: /resources/doc/img/Doc_Arte_et_Marte-App_Files_Home.png
     :alt: Preview of Start of the Files App
 
 
